@@ -238,3 +238,8 @@ require get_template_directory() . '/inc/acf-blocks.php';
  * Enqueue ACF blocks JSON.
  */
 require get_template_directory() . '/inc/blocks-list.php';
+
+/**
+ * Theme activation setup (creates boilerplate pages).
+ */
+require get_template_directory() . '/inc/setup.php';

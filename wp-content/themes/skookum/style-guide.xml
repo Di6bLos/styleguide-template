@@ -1,0 +1,573 @@
+<!-- wp:heading {"fontSize":"x-large"} -->
+<h2 class="wp-block-heading has-x-large-font-size">Heading h1</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Heading h2</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Heading h3</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Heading h4</h4>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">Heading h5</h5>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":6} -->
+<h6 class="wp-block-heading">Heading h6</h6>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a href="#">Single Link</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="#" target="_blank" rel="noreferrer noopener">Single External Link </a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.&nbsp;<strong>In id cursus mi pretium tellus duis convallis</strong>. Tempus leo eu <a href="#">aenean sed diam</a> urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl <a href="#" target="_blank" rel="noreferrer noopener">malesuada lacinia</a> integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.&nbsp;<strong>In id cursus mi pretium tellus duis convallis</strong>. Tempus leo eu <a href="#">aenean sed diam</a> urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl <a href="#" target="_blank" rel="noreferrer noopener">malesuada lacinia</a> integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">Small text</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Normal, default text</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">Medium text</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Large text</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-large"} -->
+<p class="has-x-large-font-size">XL text</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":71,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="#" target="_blank" rel=" noreferrer noopener"><img src="/wp-content/uploads/2024/08/comparison-view_12-1024x577.jpeg" alt="a" class="wp-image-71"/></a><figcaption class="wp-element-caption">Image with an external link</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":71,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2024/08/comparison-view_12-1024x577.jpeg" alt="a" class="wp-image-71"/><figcaption class="wp-element-caption">Lorem ipsum dolor sit amet consectetur adipiscing elit <strong>Lorem ipsum dolor sit amet consectetur adipiscing elit</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Buttons</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a class="btn" href="#">Link with .btn</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Single Button</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Single Button</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">One Button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Two Buttons</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">One Button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Two Buttons</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>Paragraph above a list:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#">Lorem ipsum dolor sit amet consectetur adipiscing elit</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Lorem ipsum dolor</strong>: sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#">Lorem ipsum dolor sit amet consectetur adipiscing elit</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Lorem ipsum dolor</strong>: sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor <a href="#">sit amet consectetur</a> adipiscing elit</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor sit <strong>amet consectetur</strong> adipiscing elit</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor <a href="#">sit amet consectetur</a> adipiscing elit</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor sit <strong>amet consectetur</strong> adipiscing elit</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Alignment</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Left Align</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":73,"scale":"cover","sizeSlug":"medium","linkDestination":"none"} -->
+<figure class="wp-block-image size-medium"><img src="/wp-content/uploads/2024/12/fabio-spinelli-cPpmFa1OiGU-unsplash-1-scaled-1-240x300.jpg" alt="" class="wp-image-73" style="object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>This sentence is left aligned, which is the default.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Center Align</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":73,"scale":"cover","sizeSlug":"medium","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-medium"><img src="/wp-content/uploads/2024/12/fabio-spinelli-cPpmFa1OiGU-unsplash-1-scaled-1-240x300.jpg" alt="" class="wp-image-73" style="object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">This sentence is center aligned.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">This sentence is center aligned.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"right","level":3} -->
+<h3 class="wp-block-heading has-text-align-right">Right Align</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":73,"scale":"cover","sizeSlug":"medium","linkDestination":"none","align":"right"} -->
+<figure class="wp-block-image alignright size-medium"><img src="/wp-content/uploads/2024/12/fabio-spinelli-cPpmFa1OiGU-unsplash-1-scaled-1-240x300.jpg" alt="" class="wp-image-73" style="object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"right"} -->
+<p class="has-text-align-right">This sentence is right aligned.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Content Layouts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.&nbsp;<strong>In id cursus mi pretium tellus duis convallis</strong>. Tempus leo eu <a href="#">aenean sed diam</a> urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl <a href="#" target="_blank" rel="noreferrer noopener">malesuada lacinia</a> integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.&nbsp;<strong>In id cursus mi pretium tellus duis convallis</strong>. Tempus leo eu <a href="#">aenean sed diam</a> urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl <a href="#" target="_blank" rel="noreferrer noopener">malesuada lacinia</a> integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Two Columns: 50/50</h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Pharetra augue sapien phasellus euismod per placerat mattis. Adipiscing proin in ad habitasse fames. Vehicula maecenas penatibus purus; nec etiam sem platea vel. Felis sapien pharetra praesent magna montes curae tellus ad volutpat. Nibh aptent mi erat; eleifend blandit cubilia conubia urna. Ornare etiam arcu; fermentum tincidunt facilisi litora.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"id":73,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2024/12/fabio-spinelli-cPpmFa1OiGU-unsplash-1-scaled-1-819x1024.jpg" alt="" class="wp-image-73"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Two Columns: 33/66</h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"33%"} -->
+<div class="wp-block-column" style="flex-basis:33%"><!-- wp:image {"id":73,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2024/12/fabio-spinelli-cPpmFa1OiGU-unsplash-1-scaled-1-819x1024.jpg" alt="" class="wp-image-73"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"id":117,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2024/12/sam-goodgame-Pe5BC-EDtB4-unsplash-scaled-1-1024x684.jpg" alt="" class="wp-image-117"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Three Columns: 33/33/33</h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Feature one</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor eu convallis molestie praesent ultrices ligula tellus etiam. Risus tincidunt nec finibus elementum maximus quam mollis netus hac.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Feature two</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor eu convallis molestie praesent ultrices ligula tellus etiam. Risus tincidunt nec finibus elementum maximus quam mollis netus hac.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Feature three</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor eu convallis molestie praesent ultrices ligula tellus etiam. Risus tincidunt nec finibus elementum maximus quam mollis netus hac.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Columns with background color</h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"color":{"background":"#f4e9c1"}}} -->
+<div class="wp-block-columns has-background" style="background-color:#f4e9c1"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Content Width</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.&nbsp;<strong>In id cursus mi pretium tellus duis convallis</strong>. Tempus leo eu <a href="#">aenean sed diam</a> urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl <a href="#" target="_blank" rel="noreferrer noopener">malesuada lacinia</a> integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Rutrum ornare nunc dictum tincidunt dignissim commodo vitae mauris. Per congue et gravida aenean odio mauris nisi conubia. Dolor lectus taciti eros sollicitudin dis facilisis nulla risus donec. Fames sit consequat augue convallis porta viverra aptent bibendum faucibus. Primis viverra velit diam erat blandit. Quam accumsan cursus platea euismod class pharetra condimentum tristique. Mollis in commodo massa class taciti hac ac fames ultrices.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide","style":{"color":{"background":"#cdf5c1"}}} -->
+<div class="wp-block-columns alignwide has-background" style="background-color:#cdf5c1"><!-- wp:column {"layout":{"type":"constrained","contentSize":""}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Wide Width</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.&nbsp;<strong>In id cursus mi pretium tellus duis convallis</strong>. Tempus leo eu <a href="#">aenean sed diam</a> urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl <a href="#" target="_blank" rel="noreferrer noopener">malesuada lacinia</a> integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Rutrum ornare nunc dictum tincidunt dignissim commodo vitae mauris. Per congue et gravida aenean odio mauris nisi conubia. Dolor lectus taciti eros sollicitudin dis facilisis nulla risus donec. Fames sit consequat augue convallis porta viverra aptent bibendum faucibus. Primis viverra velit diam erat blandit. Quam accumsan cursus platea euismod class pharetra condimentum tristique. Mollis in commodo massa class taciti hac ac fames ultrices.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"primary","textColor":"white"} -->
+<div class="wp-block-columns alignfull has-white-color has-primary-background-color has-text-color has-background has-link-color"><!-- wp:column {"layout":{"type":"constrained"}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Full Width</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.&nbsp;<strong>In id cursus mi pretium tellus duis convallis</strong>. Tempus leo eu <a href="#">aenean sed diam</a> urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl <a href="#" target="_blank" rel="noreferrer noopener">malesuada lacinia</a> integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Rutrum ornare nunc dictum tincidunt dignissim commodo vitae mauris. Per congue et gravida aenean odio mauris nisi conubia. Dolor lectus taciti eros sollicitudin dis facilisis nulla risus donec. Fames sit consequat augue convallis porta viverra aptent bibendum faucibus. Primis viverra velit diam erat blandit. Quam accumsan cursus platea euismod class pharetra condimentum tristique. Mollis in commodo massa class taciti hac ac fames ultrices.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Blocks</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/accordion {"name":"acf/accordion","data":{"accordion_heading":"Our Accordion","_accordion_heading":"field-accordion_heading"},"mode":"preview"} -->
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. <a href="#">In id cursus mi pretium tellus duis convallis</a>. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:acf/accordion -->
+
+<!-- wp:acf/accordion {"name":"acf/accordion","data":{"accordion_heading":"Our Accordion with Image","_accordion_heading":"field-accordion_heading"},"mode":"preview"} -->
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. <a href="#">In id cursus mi pretium tellus duis convallis</a>. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":124,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2024/12/harley-davidson-QD6GvrDFPAA-unsplash-scaled-1-1024x683.jpg" alt="" class="wp-image-124"/></figure>
+<!-- /wp:image -->
+<!-- /wp:acf/accordion -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>This is a Table with Fruits</th><th>Vegetables</th></tr></thead><tbody><tr><td>Apple</td><td>Carrot</td></tr><tr><td>Banana</td><td>Broccoli</td></tr><tr><td>Mango</td><td>Spinach</td></tr><tr><td>Orange</td><td>Cucumber</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:acf/ticker-tape {"name":"acf/ticker-tape","data":{"ticker_scroll_speed":"40","_ticker_scroll_speed":"field-ticker_scroll_speed","ticker_entries_0_ticker_entry":"Be Happy","_ticker_entries_0_ticker_entry":"field-ticker_entry","ticker_entries_1_ticker_entry":"Don't Worry","_ticker_entries_1_ticker_entry":"field-ticker_entry","ticker_entries_2_ticker_entry":"In every life we have some trouble","_ticker_entries_2_ticker_entry":"field-ticker_entry","ticker_entries_3_ticker_entry":"But when you worry you make it double","_ticker_entries_3_ticker_entry":"field-ticker_entry","ticker_entries":4,"_ticker_entries":"field-ticker_entries"},"mode":"preview"} /-->
+
+<!-- wp:acf/timeline {"name":"acf/timeline","data":{"timeline_row_0_timeline_active_beacon":"1","_timeline_row_0_timeline_active_beacon":"field-timeline_active_beacon","timeline_row_0_timeline_primary_header":"2026","_timeline_row_0_timeline_primary_header":"field-timeline_primary_header","timeline_row_0_timeline_subheading":"We are here","_timeline_row_0_timeline_subheading":"field-timeline_subheading","timeline_row_0_timeline_content":"The best year ever","_timeline_row_0_timeline_content":"field-timeline_content","timeline_row_1_timeline_active_beacon":"1","_timeline_row_1_timeline_active_beacon":"field-timeline_active_beacon","timeline_row_1_timeline_primary_header":"2027","_timeline_row_1_timeline_primary_header":"field-timeline_primary_header","timeline_row_1_timeline_subheading":"","_timeline_row_1_timeline_subheading":"field-timeline_subheading","timeline_row_1_timeline_content":"The worst year ever","_timeline_row_1_timeline_content":"field-timeline_content","timeline_row_2_timeline_active_beacon":"0","_timeline_row_2_timeline_active_beacon":"field-timeline_active_beacon","timeline_row_2_timeline_primary_header":"2028","_timeline_row_2_timeline_primary_header":"field-timeline_primary_header","timeline_row_2_timeline_subheading":"","_timeline_row_2_timeline_subheading":"field-timeline_subheading","timeline_row_2_timeline_content":"Hello\r\n\r\n\u0026nbsp;","_timeline_row_2_timeline_content":"field-timeline_content","timeline_row":3,"_timeline_row":"field-timeline_row"},"mode":"preview"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Image Stack Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/image-stack {"name":"acf/image-stack","data":{"image_stack_base":422,"_image_stack_base":"field-image_stack_base","image_stack_layers_0_image_stack_layers_layer_name":"Emergency Route","_image_stack_layers_0_image_stack_layers_layer_name":"field-image_stack_layers_layer_name","image_stack_layers_0_image_stack_layers_layer_image":423,"_image_stack_layers_0_image_stack_layers_layer_image":"field-image_stack_layers_layer_image","image_stack_layers_1_image_stack_layers_layer_name":"Restaurant Route","_image_stack_layers_1_image_stack_layers_layer_name":"field-image_stack_layers_layer_name","image_stack_layers_1_image_stack_layers_layer_image":425,"_image_stack_layers_1_image_stack_layers_layer_image":"field-image_stack_layers_layer_image","image_stack_layers_2_image_stack_layers_layer_name":"Scenic Route","_image_stack_layers_2_image_stack_layers_layer_name":"field-image_stack_layers_layer_name","image_stack_layers_2_image_stack_layers_layer_image":424,"_image_stack_layers_2_image_stack_layers_layer_image":"field-image_stack_layers_layer_image","image_stack_layers":3,"_image_stack_layers":"field-image_stack_layers"},"mode":"preview"} /-->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Image Slider</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/slider {"name":"acf/slider","data":{"slider_slides_0_slide_image":49,"_slider_slides_0_slide_image":"field-slide_image","slider_slides_0_slide_image_zoom":"1","_slider_slides_0_slide_image_zoom":"field-slide_image_zoom","slider_slides_0_slide_image_alt_text":"h","_slider_slides_0_slide_image_alt_text":"field-slide_image_alt_text","slider_slides_0_video_slide_title":"","_slider_slides_0_video_slide_title":"field-slide_title","slider_slides_0_slide_caption":"hi this is a caption","_slider_slides_0_slide_caption":"field-slide_caption","slider_slides_1_slide_image":120,"_slider_slides_1_slide_image":"field-slide_image","slider_slides_1_slide_image_zoom":"1","_slider_slides_1_slide_image_zoom":"field-slide_image_zoom","slider_slides_1_slide_image_alt_text":"2","_slider_slides_1_slide_image_alt_text":"field-slide_image_alt_text","slider_slides_1_video_slide_title":"2","_slider_slides_1_video_slide_title":"field-slide_title","slider_slides_1_slide_caption":"hi this is a caption","_slider_slides_1_slide_caption":"field-slide_caption","slider_slides_2_slide_image":123,"_slider_slides_2_slide_image":"field-slide_image","slider_slides_2_slide_image_zoom":"1","_slider_slides_2_slide_image_zoom":"field-slide_image_zoom","slider_slides_2_slide_image_alt_text":"3","_slider_slides_2_slide_image_alt_text":"field-slide_image_alt_text","slider_slides_2_video_slide_title":"slide 3","_slider_slides_2_video_slide_title":"field-slide_title","slider_slides_2_slide_caption":"hi this is a caption","_slider_slides_2_slide_caption":"field-slide_caption","slider_slides":3,"_slider_slides":"field-slider_slides"},"mode":"preview"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Image Zoom</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/image-zoom {"name":"acf/image-zoom","data":{"image_zoom_thumbnail":121,"_image_zoom_thumbnail":"field-image_zoom_thumbnail","image_zoom":244,"_image_zoom":"field-image_zoom","image_zoom_alt_text":"Bridge","_image_zoom_alt_text":"field-image_zoom_alt_text","image_zoom_caption":"","_image_zoom_caption":"field-image_zoom_caption"},"mode":"preview"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Image Comparison Slider </h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/image-comparison-slider {"name":"acf/image-comparison-slider","data":{"image_comparison_image_one":70,"_image_comparison_image_one":"field-image_comparison_image_one","image_comparison_image_one_alt_text":"bridge","_image_comparison_image_one_alt_text":"field-image_comparison_image_one_alt_text","image_comparison_image_one_caption":"Arch Bridge","_image_comparison_image_one_caption":"field-image_comparison_image_one_caption","image_comparison_image_two":71,"_image_comparison_image_two":"field-image_comparison_image_two","image_comparison_image_two_alt_text":"bridge","_image_comparison_image_two_alt_text":"field-image_comparison_image_two_alt_text","image_comparison_image_two_caption":"Tower Bridge","_image_comparison_image_two_caption":"field-image_comparison_image_two_caption"},"mode":"preview"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Hero</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/hero {"name":"acf/hero","data":{"hero_heading":"Best Heading ever","_hero_heading":"field-hero_heading","hero_small_heading":"Smallest heading ever","_hero_small_heading":"field-hero_small_heading","hero_small_heading_toggle":"1","_hero_small_heading_toggle":"field-small_heading_toggle","hero_description":"Cool Heading","_hero_description":"field-hero_description","hero_background_image":73,"_hero_background_image":"field-hero_background_image"},"mode":"preview"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Image Hotspot</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/image-hotspot {"name":"acf/image-hotspot","data":{"image_hotspot_base":123,"_image_hotspot_base":"field-image_hotspot_base","image_hotspot_markers_0_image_hotspot_marker_title":"Hotspot One","_image_hotspot_markers_0_image_hotspot_marker_title":"field-image_hotspot_marker_title","image_hotspot_markers_0_image_hotspot_marker_position_x":"31","_image_hotspot_markers_0_image_hotspot_marker_position_x":"field-image_hotspot_marker_position_x","image_hotspot_markers_0_image_hotspot_marker_position_y":"70","_image_hotspot_markers_0_image_hotspot_marker_position_y":"field-image_hotspot_marker_position_y","image_hotspot_markers_0_image_hotspot_marker_description":"\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;","_image_hotspot_markers_0_image_hotspot_marker_description":"field-image_hotspot_marker_description","image_hotspot_markers_0_image_hotspot_marker_icon":"bicycle-icon","_image_hotspot_markers_0_image_hotspot_marker_icon":"field-image_hotspot_marker_icon","image_hotspot_markers_1_image_hotspot_marker_title":"Hotspot Two","_image_hotspot_markers_1_image_hotspot_marker_title":"field-image_hotspot_marker_title","image_hotspot_markers_1_image_hotspot_marker_position_x":"67","_image_hotspot_markers_1_image_hotspot_marker_position_x":"field-image_hotspot_marker_position_x","image_hotspot_markers_1_image_hotspot_marker_position_y":"50","_image_hotspot_markers_1_image_hotspot_marker_position_y":"field-image_hotspot_marker_position_y","image_hotspot_markers_1_image_hotspot_marker_description":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;","_image_hotspot_markers_1_image_hotspot_marker_description":"field-image_hotspot_marker_description","image_hotspot_markers_1_image_hotspot_marker_icon":"question-circle-icon","_image_hotspot_markers_1_image_hotspot_marker_icon":"field-image_hotspot_marker_icon","image_hotspot_markers_2_image_hotspot_marker_title":"Hotspot Three","_image_hotspot_markers_2_image_hotspot_marker_title":"field-image_hotspot_marker_title","image_hotspot_markers_2_image_hotspot_marker_position_x":"50","_image_hotspot_markers_2_image_hotspot_marker_position_x":"field-image_hotspot_marker_position_x","image_hotspot_markers_2_image_hotspot_marker_position_y":"80","_image_hotspot_markers_2_image_hotspot_marker_position_y":"field-image_hotspot_marker_position_y","image_hotspot_markers_2_image_hotspot_marker_description":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.\r\n\r\n\u003ca href=\u0022#\u0022\u003eLearn More\u003c/a\u003e\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;\r\n\r\n\u0026nbsp;","_image_hotspot_markers_2_image_hotspot_marker_description":"field-image_hotspot_marker_description","image_hotspot_markers_2_image_hotspot_marker_icon":"exclamation-triangle-icon","_image_hotspot_markers_2_image_hotspot_marker_icon":"field-image_hotspot_marker_icon","image_hotspot_markers":3,"_image_hotspot_markers":"field-image_hotspot_markers"},"mode":"preview"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Cover Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:cover {"overlayColor":"vivid-cyan-blue","isUserOverlayColor":true,"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-vivid-cyan-blue-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">I love blue backgrounds</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">File Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:file {"id":44,"href":"/wp-content/uploads/2024/12/ta-ching-chen-poPTI5BszZg-unsplash-scaled.jpg"} -->
+<div class="wp-block-file"><a id="wp-block-file--media-531a9894-66a2-49a7-b424-403f8b8e26e9" href="/wp-content/uploads/2024/12/ta-ching-chen-poPTI5BszZg-unsplash-scaled.jpg">ta-ching-chen-poPTI5BszZg-unsplash</a><a href="/wp-content/uploads/2024/12/ta-ching-chen-poPTI5BszZg-unsplash-scaled.jpg" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-531a9894-66a2-49a7-b424-403f8b8e26e9">Download</a></div>
+<!-- /wp:file -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">PDF Embed</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/pdf-embed {"name":"acf/pdf-embed","data":{"pdf_src_toggle":"0","_pdf_src_toggle":"field-pdf_src_toggle","pdf_media_upload_file":346,"_pdf_media_upload_file":"field-pdf_media_upload_file"},"mode":"preview"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Separator</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Default</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p>Dots</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-dots","backgroundColor":"vivid-red"} -->
+<hr class="wp-block-separator has-text-color has-vivid-red-color has-alpha-channel-opacity has-vivid-red-background-color has-background is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p>Wide line</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-wide","backgroundColor":"vivid-cyan-blue"} -->
+<hr class="wp-block-separator has-text-color has-vivid-cyan-blue-color has-alpha-channel-opacity has-vivid-cyan-blue-background-color has-background is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Spacer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Spacer added below...</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph -->
+<p>Spacer above.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Tooltip</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This is a paragraph which has a [tooltip data="Tooltip content here. There isn't a lot of space and so it should be used sparingly."] tooltip [/tooltip]. These tooltips can be used inside any paragraph or body of content throughout the site.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Video Formats</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Youtube Embed</h3>
+<!-- /wp:heading -->
+
+<!-- wp:video {"id":233} -->
+<figure class="wp-block-video"><video controls src="/wp-content/uploads/2024/12/sample-5s-2.mp4" playsinline></video></figure>
+<!-- /wp:video -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Vimeo Embed</h3>
+<!-- /wp:heading -->
+
+<!-- wp:acf/vimeo-embed {"name":"acf/vimeo-embed","data":{"vimeo_url":"https://vimeo.com/99789644","_vimeo_url":"field-vimeo_url","vimeo_caption":"","_vimeo_caption":"field-vimeo_caption"},"mode":"edit"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Video Slider</h3>
+<!-- /wp:heading -->
+
+<!-- wp:acf/slider-video {"name":"acf/slider-video","data":{"slider_video_slides_0_video_slide_title":"He-Man","_slider_video_slides_0_video_slide_title":"field-slide_title","slider_video_slides_0_video_slide_url":"https://www.youtube.com/watch?v=7yeA7a0uS3A","_slider_video_slides_0_video_slide_url":"field-slide_video","slider_video_slides_1_video_slide_title":"Pokemon","_slider_video_slides_1_video_slide_title":"field-slide_title","slider_video_slides_1_video_slide_url":"https://www.youtube.com/watch?v=6xKWiCMKKJg","_slider_video_slides_1_video_slide_url":"field-slide_video","slider_video_slides_2_video_slide_title":"Power Rangers","_slider_video_slides_2_video_slide_title":"field-slide_title","slider_video_slides_2_video_slide_url":"https://www.youtube.com/watch?v=nHalaFUqnTI","_slider_video_slides_2_video_slide_url":"field-slide_video","slider_video_slides":3,"_slider_video_slides":"field-slider_video_slides"},"mode":"preview"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Audio Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:audio -->
+<figure class="wp-block-audio"><audio controls src="https://file-examples.com/storage/febbc587c3676062a95b500/2017/11/file_example_MP3_700KB.mp3"></audio></figure>
+<!-- /wp:audio -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Progress Bar</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/progress-bars {"name":"acf/progress-bars","data":{"progress_bars_0_progress_bar_title":"1","_progress_bars_0_progress_bar_title":"field-progress_bar_title","progress_bars_0_progress_bar_metric":"100","_progress_bars_0_progress_bar_metric":"field-progress_bar_metric","progress_bars_0_progress_bar_value":"49","_progress_bars_0_progress_bar_value":"field-progress_bar_value","progress_bars":1,"_progress_bars":"field-progress_bars"},"mode":"preview"} /-->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
