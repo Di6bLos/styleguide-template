@@ -1,0 +1,86 @@
+@use 'sass:math';
+
+/* 
+ * Variables that match theme.json entries use wp generated variables eg. var(--wp--preset--color--primary),
+ * and should be edited in the theme.json. 
+ * Additional variables for developer use only are explicitly defined below.
+*/
+
+// Colors
+$color-primary:       var(--wp--preset--color--primary);
+$color-secondary:     var(--wp--preset--color--secondary);
+$color-tertiary:      var(--wp--preset--color--tertiary);
+
+// Baseline Colors
+$color-warning-red:   #DD4448;
+$color-transparent:   rgba(0, 0, 0, 0);
+$color-overlay:       linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+$color-overlay-dark:  linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+$color-white:         var(--wp--preset--color--white);
+$color-black:         var(--wp--preset--color--black);
+$color-gray-light:    var(--wp--preset--color--gray-light);
+$color-gray:          var(--wp--preset--color--gray);
+$color-gray-dark:     var(--wp--preset--color--gray-dark);
+$color-charcoal:      var(--wp--preset--color--charcoal);
+
+// Typography
+$font-family-primary:   var(--wp--preset--font-family--primary); // Headings
+$font-family-secondary: var(--wp--preset--font-family--secondary); // Body text
+
+// Convert pixel values to rem.
+$root-font-size: 16px; // Default root font size, typically 16px in browsers
+
+// Function to strip units from a value
+@function stripUnit($value) {
+	@return math.div($value, ($value * 0 + 1));
+}
+// Function to convert pixel values to rem
+@function rem($pxValue) {
+	$remValue: math.div(stripUnit($pxValue), stripUnit($root-font-size)) + rem;	
+    @return $remValue;
+}
+
+// Font Sizes
+$font-size-xxlarge: rem(32px);
+$font-size-xlarge:  rem(24px);
+$font-size-large:   rem(20px);
+$font-size-medium:  rem(18px);
+$font-size-small:   rem(16px);
+$font-size-xsmall:  rem(14px);
+
+// Breakpoints 
+$bp-xxlarge:       1600px;
+$bp-xlarge:        1440px;
+$bp-large:         1150px;
+$bp-medium:        782px;
+$bp-small:         600px;
+$bp-xsmall:        400px;
+
+// Spacing
+$spacing-large:    60px;
+$spacing-medium:   40px;
+$spacing-small:    20px;
+$spacing-xsmall:   10px;
+
+$margin-copy-default: 1em 0 0.5em 0;
+
+// Animations
+$transition: 0.2s ease-in-out;
+
+// Miscellaneous
+$box-shadow: 0px 8px 8px -8px rgba(0,0,0,0.2);
+
+//Animation mixins
+@mixin underline-effect($thickness: 1px) {
+    background: linear-gradient(currentColor 0 0) bottom left/0% $thickness no-repeat;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-size $transition;
+	// Reset other underlines
+	text-decoration: none;
+	border-bottom: none;
+
+	&:hover {
+		background-size: 100% $thickness;
+	}
+}

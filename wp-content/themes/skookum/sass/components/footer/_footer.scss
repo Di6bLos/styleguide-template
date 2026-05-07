@@ -1,0 +1,73 @@
+@use './../../utilities/variables' as *;
+
+.site-footer {
+	color: $color-white;
+	background: $color-primary;
+	padding: 2rem 0;
+
+	@media (min-width: $bp-medium) {
+		padding: 4rem 0;
+	}
+	
+	h2 {
+		font-size: rem(24px);
+		color: $color-white;
+
+		@media (min-width: $bp-small) {
+			font-size: rem(28px);
+		}
+	}
+
+	p {
+		margin: 12px 0;
+	}
+
+
+	.footer-columns {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+
+		.col {
+			flex: 1;
+		}
+	}
+
+	a {
+		color: $color-white;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.social-links {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+
+		a {
+			text-decoration: none;
+			margin-top: -20px;
+		}
+
+		.social-icon {
+			width: 2.2em;
+			height: 2.2em;
+			padding: 3px;
+			border: 2px solid $color-transparent;
+			border-radius: 5px;
+			transition: $transition;
+	
+			&:hover {
+				border: 2px solid $color-white;
+			}
+		}
+	}
+
+	.footer-logo {
+		min-width: 250px;
+	}
+}

@@ -1,0 +1,61 @@
+@use './../../utilities/variables' as *;
+
+// CSS variables used instead of SCSS so that the gaps can be adjusted at runtime
+:root {
+	--ticker-gap: 60px;
+}
+
+@media (min-width: $bp-large) {
+	:root {
+		--ticker-gap: 100px;
+	}
+}
+
+@media (min-width: $bp-xxlarge) {
+	:root {
+		--ticker-gap: 140px;
+	}
+}
+
+.ticker-tape {
+	position: relative;
+	z-index: 3;
+	background-color: $color-gray-light;
+	padding: 40px;
+
+	@media (min-width: $bp-small) {
+		padding: 60px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		gap: 40px var(--ticker-gap);
+		flex-wrap: wrap;
+		white-space: nowrap;
+	}
+}
+
+.ticker-tape[data-animated="true"] {
+	overflow: hidden;
+	padding-inline: 0;
+
+	.ticker-tape__inner {
+		width: max-content;
+		flex-wrap: nowrap;
+		animation: 40s scroll linear infinite;
+	}
+	
+	&:hover {
+		.ticker-tape__inner {
+			animation-play-state: paused;
+		}
+	}
+}
+
+@keyframes scroll {
+	to {
+		transform: translateX(calc(-50% - var(--ticker-gap)/2));
+	}
+}

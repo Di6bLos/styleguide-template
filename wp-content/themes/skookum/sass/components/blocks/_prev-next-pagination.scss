@@ -1,0 +1,59 @@
+@use './../../utilities/variables' as *;
+
+.prev-next-pagination {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		color: $color-primary;
+		font-weight: 700;
+		text-decoration: none;
+
+		&:hover {
+			span {
+				background-size: 100% 2px;
+			}
+		}
+
+		span {
+			@include underline-effect(2px);
+		}
+
+		&.prev span {
+			background-position: bottom right; // Reverse the direction of the underline effect for previous links
+		}
+
+		&:hover svg {
+			fill: $color-secondary;
+		}
+
+		&.next:only-child {
+			margin-left: auto;
+		}
+	}	
+
+	svg {
+		// Adjust size based on font-size
+		width: 1.5em; 
+		height: 1.5em;
+		vertical-align: middle;
+		fill: $color-primary;
+		transition: $transition;
+	}
+	
+	.prev:hover {
+		svg {
+			transform: translateX(-5px);
+		}
+	}
+
+	.next:hover {
+		svg {
+			transform: translateX(5px);
+		}
+	}
+}

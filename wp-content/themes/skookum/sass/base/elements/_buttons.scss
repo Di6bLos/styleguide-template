@@ -1,0 +1,59 @@
+@use './../../utilities/variables' as *;
+
+// Button variables
+$button-padding: 10px 20px;
+$button-border-radius: 3px;
+
+@mixin button-base {
+    padding: $button-padding;
+    border-radius: $button-border-radius;
+    border: 2px solid;
+    font-weight: 700;
+    line-height: 1.2;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: $transition;
+}
+
+@mixin button-style($text-color: $color-white, $bg-color: $color-primary, $border-color: $bg-color) {
+    @include button-base;
+    color: $text-color;
+    background-color: $bg-color;
+    border-color: $border-color;
+
+    &:visited {
+        color: $text-color;
+    }
+
+    &:hover {
+        background-color: $text-color;
+        color: $bg-color;
+        border-color: $border-color;
+
+        &:visited {
+            color: $bg-color;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: dotted 1px $bg-color;
+    }
+}
+
+// Apply to WP button blocks and custom button class
+.btn,
+.wp-block-button__link,
+.wp-block-file__button {
+    @include button-style();
+}
+
+.wp-block-button,
+.wp-block-buttons {
+    margin: $margin-copy-default;
+}
+
+.is-style-outline .wp-block-button__link {
+    @include button-style($color-primary, $color-white, $color-primary);
+}

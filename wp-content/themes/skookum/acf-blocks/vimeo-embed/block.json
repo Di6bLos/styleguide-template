@@ -1,0 +1,15 @@
+{
+    "name": "acf/vimeo-embed",
+	"title": "Vimeo Embed",
+    "description": "A Vimeo video embed block with optional caption.",
+    "category": "embed",
+    "icon": "format-video",
+    "keywords": ["video", "embed"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "vimeo-embed.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

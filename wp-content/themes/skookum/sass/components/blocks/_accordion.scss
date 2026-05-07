@@ -1,0 +1,114 @@
+@use './../../utilities/variables' as *;
+
+.accordion {
+    border: 1px solid $color-primary;
+    margin: 10px 0;
+
+    &__title {
+        position: relative;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        color: $color-primary;
+        font-weight: 700;
+        transition: border $transition; // Seamlessly adds border when active.
+        border-bottom: 0px solid $color-primary;
+
+        @media (min-width: $bp-small) {
+            padding: 15px;
+        }
+
+        // Create plus/minus button.
+        button {
+            cursor: pointer;
+            background-color: $color-transparent;
+            width: 40px;
+            height: 40px;
+            border: 0;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                transition: $transition;
+                background: $color-primary;
+                border-radius: 2px;
+                transform-origin: center;
+            }
+
+            &::before {
+                top: 25%;
+                bottom: 25%;
+                left: 45%;
+                width: 10%;
+            }
+
+            &::after {
+                top: 45%;
+                left: 25%;
+                right: 25%;
+                height: 10%;
+            }
+
+            &:hover {
+                &::before,
+                &::after {
+                    background: $color-secondary;
+                }
+            }
+        }
+    }
+
+     .wp-block-columns {
+        padding: 20px 0px 20px 0px;
+        margin: 0px; // Override default block margin.
+    }
+
+    // Animate plus to minus
+    &__container.active .accordion__title {
+        border-bottom: 1px solid $color-primary;
+
+        button {
+            &::before,
+            &::after {
+                transform: rotate(90deg);
+            }
+
+            &::after {
+                left: 50%;
+                right: 50%;
+            }
+        }
+    }
+
+    // Animate content roll out.
+    &__content {
+        padding: 0 20px;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: all $transition;
+
+        .acf-innerblocks-container {
+            overflow: hidden;
+
+            > :first-child {
+                margin-top: 20px;
+            }
+
+            > :last-child {
+                margin-bottom: 20px;
+            }
+        }
+
+
+    }    
+
+    &__container.active {
+        .accordion__content {
+            grid-template-rows: 1fr;
+        }
+    }
+}

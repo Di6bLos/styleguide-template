@@ -1,0 +1,16 @@
+@use './../../utilities/variables' as *;
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color-black;
+	font-family: $font-family-primary;
+	font-size: $font-size-medium;
+
+	@media (min-width: $bp-small) {
+		font-size: $font-size-large;
+	}
+}

@@ -1,0 +1,232 @@
+{
+    "key": "group-image_hotspot",
+    "title": "Image Hotspot",
+    "fields": [
+        {
+            "key": "field-image_hotspot_base",
+            "label": "Base Image",
+            "name": "image_hotspot_base",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field-image_hotspot_base_alt_text",
+            "label": "Image Alt Text",
+            "name": "image_hotspot_base_alt_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "1",
+            "placeholder": "",
+            "new_lines": "",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field-image_hotspot_markers",
+            "label": "Markers",
+            "name": "image_hotspot_markers",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Marker",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field-image_hotspot_marker_title",
+                    "label": "Title",
+                    "name": "image_hotspot_marker_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field-image_hotspot_markers"
+                },
+                {
+                    "key": "field-image_hotspot_marker_position_x",
+                    "label": "Positon X",
+                    "name": "image_hotspot_marker_position_x",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "50",
+                    "min": 0,
+                    "max": 100,
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field-image_hotspot_markers"
+                },
+                {
+                    "key": "field-image_hotspot_marker_position_y",
+                    "label": "Positon Y",
+                    "name": "image_hotspot_marker_position_y",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "0",
+                    "min": 0,
+                    "max": 100,
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field-image_hotspot_markers"
+                },
+                {
+                    "key": "field-image_hotspot_marker_description",
+                    "label": "Description",
+                    "name": "image_hotspot_marker_description",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": 200,
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "parent_repeater": "field-image_hotspot_markers"
+                },
+                {
+                    "key": "field-image_hotspot_marker_icon",
+                    "label": "Icon",
+                    "name": "image_hotspot_marker_icon",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "": "Pin",
+                        "pedestrian-icon": "Pedestrian",
+                        "bicycle-icon": "Bicycle",
+                        "car-icon": "Car",
+                        "bus-icon": "Bus",
+                        "train-icon": "Train",
+                        "house-icon": "House",
+                        "office-building-icon": "Office",
+                        "road-sign-icon": "Road Sign",
+                        "construction-work-icon": "Construction",
+                        "route-icon": "Route",
+                        "exclamation-triangle-icon": "Alert",
+                        "question-circle-icon": "Info"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "create_options": 0,
+                    "save_options": 0,
+                    "parent_repeater": "field-image_hotspot_markers"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/image-hotspot"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1759965184
+}

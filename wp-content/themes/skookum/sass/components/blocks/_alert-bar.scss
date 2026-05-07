@@ -1,0 +1,62 @@
+@use "../../utilities/variables" as *;
+
+.alert-bar {
+	position: sticky;
+	top: 0;
+	z-index: 9;
+	transition: $transition;
+	min-width: 100%;
+	max-height: 0;
+	overflow: hidden;
+
+	&.active {
+		max-height: 600px; // Arbitray limit to allow for animation.
+		transition: $transition;
+	}
+
+	&.closed {
+		display: none;
+	}
+}
+
+.alert-bar-wrapper {
+	background-color: $color-primary;
+	color: $color-white;
+    padding: 10px 0px;
+	width: 100%;
+	
+	&__message {
+		width: 100%;
+	}
+
+	a {
+		color: $color-white;
+
+		&:hover {
+			color: $color-secondary;
+		}
+	}
+
+	p {
+		margin: 10px 0;
+	}
+
+	.close-btn {
+		background-color: $color-transparent;
+        margin: -5px -15px 0px 0px; // Negative margins to account for padding.
+        float: right;
+		color: $color-white;
+		// currentcolor is used to inherit color from inline styles added in block editor.
+		&:hover {
+			border-color: currentcolor;
+		}
+
+		&__icon {
+			background-color: currentcolor;
+
+			&::after {
+				background-color: currentcolor;
+			}
+		}
+	}
+}

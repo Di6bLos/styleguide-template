@@ -1,0 +1,33 @@
+@use "../../utilities/variables" as *;
+
+.close-btn {
+	cursor: pointer;
+	height: auto;
+	border: 1px solid $color-transparent;
+	margin: 10px 0;
+	padding: 20px 10px;
+
+	&:hover {
+		background-color: $color-transparent;
+		border: 1px solid $color-white;
+	}
+
+	&__icon {
+        display: block;
+        background-color: $color-white;
+        height: 2px;
+        width: 20px;
+        position: relative;
+        transform: rotate(45deg);
+
+		&::after {
+			content: " ";
+			display: block;
+			background-color: $color-white;
+			height: 2px;
+			position: relative;
+			transform: rotate(-90deg);
+		}
+
+    }
+}

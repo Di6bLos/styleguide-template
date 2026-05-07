@@ -1,0 +1,18 @@
+@use '../../utilities/variables' as *;
+
+ul.secondary-menu {
+	margin: 0;
+	padding: 10px 0;
+	list-style: none;
+	display: flex;
+	
+	.menu-item {
+		width: auto;
+
+		&:not(:last-child) a::after {
+			content: '|';
+			margin: 0 5px;
+			color: inherit;
+		}
+	}
+}

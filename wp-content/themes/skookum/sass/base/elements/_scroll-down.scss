@@ -1,0 +1,39 @@
+@use '../../utilities/variables' as *;
+
+.scroll-down {
+	position: absolute;
+	z-index: 3;
+	bottom: 40px;
+
+	&__btn {
+		background-color: $color-transparent;
+		border: $color-transparent;
+
+		&:hover {
+			background-color: $color-transparent;
+			border: $color-transparent;
+		}
+	}
+
+	&__icon {
+		display: block;
+		width: clamp(30px, 10vw, 60px);
+		height: 100px;
+		fill: $color-white;
+		align-self: flex-end;
+	}
+}
+
+.bounce-animation {
+	animation: bounce 1500ms;
+	animation-iteration-count: 1;
+
+	@keyframes bounce {
+		0%, 100% { 
+			transform: translateY(0);
+		}
+		50% { 
+			transform: translateY(-20px); 
+		}
+	}
+}

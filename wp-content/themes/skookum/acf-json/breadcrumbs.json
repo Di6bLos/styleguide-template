@@ -1,0 +1,32 @@
+{
+    "key": "group_breadcrumb_description",
+    "title": "Breadcrumbs Description",
+    "fields": [
+        {
+            "key": "field_breadcrumbs_description",
+            "label": "Description",
+            "name": "breadcrumbs_description",
+            "type": "message",
+            "message": "This block does not support any inputs, add the block and it will add links based on page's parents.",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/breadcrumbs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

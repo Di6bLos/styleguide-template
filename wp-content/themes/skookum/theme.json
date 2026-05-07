@@ -1,0 +1,127 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout":{
+            "contentSize": "782px",
+			"wideSize": "1440px"
+        },
+		"typography": {
+			"fluid": true,
+			"fontWeight": true,
+			"fontFamilies": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"fontFamily": "'Roboto', sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "100 200 300 400 500 600 700 800 900",
+							"fontStretch": "normal",
+							"src": [ "file:./fonts/Roboto-VariableFont.ttf"]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "italic",
+							"fontWeight": "100 200 300 400 500 600 700 800 900",
+							"fontStretch": "normal",
+							"src": [ "file:./fonts/Roboto-Italic-VariableFont.ttf"]
+						}
+					]
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"fontFamily": "'Montserrat', sans-serif"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Small",
+					"size": "16px",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "24px",
+					"slug": "medium",
+					"fluid": {
+						"min": "20px",
+						"max": "28px"
+					}
+				},
+				{
+					"name": "Large",
+					"size": "36px",
+					"slug": "large",
+					"fluid": {
+						"min": "32px",
+						"max": "42px"
+					}
+				},
+				{
+					"name": "Extra Large",
+					"size": "56px",
+					"slug": "x-large",
+					"fluid": {
+						"min": "45px",
+						"max": "64px"
+					}
+				}
+			]
+		},
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#1F2C3E",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#4B9AA8",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#CA5F3C",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#FFF",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#F0F0F0",
+					"name": "Light Gray",
+					"slug": "gray-light"
+				},
+				{
+					"color": "#AAAAAA",
+					"name": "Gray",
+					"slug": "gray"
+				},
+				{
+					"color": "#5A5A5A",
+					"name": "Dark Gray",
+					"slug": "gray-dark"
+				},
+				{
+					"color": "#333333",
+					"name": "Charcoal",
+					"slug": "charcoal"
+				},
+				{
+					"color": "#000",
+					"name": "Black",
+					"slug": "black"
+				}
+			]
+		}
+	}
+}

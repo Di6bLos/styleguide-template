@@ -1,0 +1,51 @@
+@use './../../utilities/variables' as *;
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: $margin-copy-default;
+    scroll-margin-top: 60px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: clamp(rem(45px), 5vw, rem(64px));
+    margin: 0;
+}
+
+h2,
+.h2 {
+    font-size: rem(32px);
+
+    @media (min-width: $bp-small) {
+        font-size: rem(38px);
+    }
+}
+
+h3,
+.h3 {
+    font-size: rem(24px);
+
+    @media (min-width: $bp-small) {
+        font-size: rem(28px);
+    }
+}
+
+h4,
+.h4 {
+    font-size: $font-size-large;
+
+    @media (min-width: $bp-small) {
+        font-size: $font-size-xlarge;
+    }
+}
+
+h5, h6, .subheader{
+    font-size: $font-size-medium;
+
+    @media (min-width: $bp-small) {
+        font-size: $font-size-large;
+    }
+}

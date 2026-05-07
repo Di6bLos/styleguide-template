@@ -1,0 +1,63 @@
+@use './../../utilities/variables' as *;
+
+a {
+	color: $color-primary;
+    transition: $transition;
+	cursor: pointer;
+
+	&:visited {
+		color: inherit;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-secondary;
+	}
+	
+	&:focus {
+		outline: thin dotted;
+	}
+	
+	&:hover,
+	&:active {
+		text-decoration: none;
+		outline: 0;
+	}
+}
+
+// Show external link icon only within basic content.
+main.site-main a[target="_blank"]:not(.hotspot__description a) {
+	&::after {
+		content: url('./../icons/external-link-icon.svg');
+		display: inline-block;
+		width: 12px;
+		margin-left: 3px;
+		transition: $transition;
+
+		@media (min-width: $bp-small) {
+			width: 16px;
+			margin-left: 6px;
+		}
+	}
+}
+
+// Invert external link icon for links with white text.
+.has-white-color a[target="_blank"]::after {
+    filter: invert(100%);
+}
+
+// Show external link icon bottom right of image links.
+.wp-block-image a[target="_blank"] {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	&:hover::after {
+		transform: scale(1.125);
+	}
+}

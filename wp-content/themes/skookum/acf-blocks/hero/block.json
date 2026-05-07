@@ -1,0 +1,16 @@
+{
+    "name": "acf/hero",
+    "title": "Hero",
+    "description": "The Hero block can be used in place of the featured image at the top of a page.",
+    "category": "design",
+    "icon": "shield",
+    "keywords": ["Heading"],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "hero.php"
+    },
+    "supports": {
+      "anchor": true,
+      "align": ["full", "wide"]
+    }
+  }

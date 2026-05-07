@@ -1,0 +1,691 @@
+{
+    "key": "group-translation-matrix",
+    "title": "Translation Matrix",
+    "fields": [
+		{
+			"key": "field-translate_tab_es",
+			"label": "es",
+			"name": "",
+			"aria-label": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "top",
+			"endpoint": 0,
+			"selected": 0
+		},
+		{
+			"key": "field-translate_back_to_top_es",
+			"label": "",
+			"name": "translate_back_to_top_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Back to top",
+			"append": ""
+		},
+		{
+			"key": "field-translate_mobile_menu_toggle_es",
+			"label": "",
+			"name": "translate_mobile_menu_toggle_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Mobile menu toggle",
+			"append": ""
+		},
+		{
+			"key": "field-translate_close_es",
+			"label": "",
+			"name": "translate_close_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Close",
+			"append": ""
+		},
+		{
+			"key": "field-translate_close_message_es",
+			"label": "",
+			"name": "translate_close_message_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Close message",
+			"append": ""
+		},
+		{
+			"key": "field-translate_open_es",
+			"label": "",
+			"name": "translate_open_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Open",
+			"append": ""
+		},
+		{
+			"key": "field-translate_previous_es",
+			"label": "",
+			"name": "translate_previous_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Previous",
+			"append": ""
+		},
+		{
+			"key": "field-translate_next_es",
+			"label": "",
+			"name": "translate_next_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Next",
+			"append": ""
+		},
+		{
+			"key": "field-translate_navigate_previous_es",
+			"label": "",
+			"name": "translate_navigate_previous_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Navigate to previous page",
+			"append": ""
+		},
+		{
+			"key": "field-translate_navigate_next_es",
+			"label": "",
+			"name": "translate_navigate_next_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Navigate to next page",
+			"append": ""
+		},
+		{
+			"key": "field-translate_sound_transit_logo_es",
+			"label": "",
+			"name": "translate_sound_transit_logo_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Sound Transit logo",
+			"append": ""
+		},
+		{
+			"key": "field-translate_enter_email_address_es",
+			"label": "",
+			"name": "translate_enter_email_address_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Enter your email address",
+			"append": ""
+		},
+		{
+			"key": "field-translate_subscribe_now_es",
+			"label": "",
+			"name": "translate_subscribe_now_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Subscribe now",
+			"append": ""
+		},
+		{
+			"key": "field-translate_subscribe_for_updates_es",
+			"label": "",
+			"name": "translate_subscribe_for_updates_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Subscribe for updates",
+			"append": ""
+		},
+		{
+			"key": "field-translate_click_to_enlarge_es",
+			"label": "",
+			"name": "translate_click_to_enlarge_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Click to enlarge",
+			"append": ""
+		},
+		{
+			"key": "field-translate_expand_section_es",
+			"label": "",
+			"name": "translate_expand_section_es",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Expand section",
+			"append": ""
+		},
+		{
+			"key": "field-translate_tab_ko",
+			"label": "ko",
+			"name": "",
+			"aria-label": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "top",
+			"endpoint": 0,
+			"selected": 0
+		},
+		{
+			"key": "field-translate_back_to_top_ko",
+			"label": "",
+			"name": "translate_back_to_top_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Back to top",
+			"append": ""
+		},
+		{
+			"key": "field-translate_mobile_menu_toggle_ko",
+			"label": "",
+			"name": "translate_mobile_menu_toggle_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Mobile menu toggle",
+			"append": ""
+		},
+		{
+			"key": "field-translate_close_ko",
+			"label": "",
+			"name": "translate_close_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Close",
+			"append": ""
+		},
+		{
+			"key": "field-translate_close_message_ko",
+			"label": "",
+			"name": "translate_close_message_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Close message",
+			"append": ""
+		},
+		{
+			"key": "field-translate_open_ko",
+			"label": "",
+			"name": "translate_open_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Open",
+			"append": ""
+		},
+		{
+			"key": "field-translate_previous_ko",
+			"label": "",
+			"name": "translate_previous_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Previous",
+			"append": ""
+		},
+		{
+			"key": "field-translate_next_ko",
+			"label": "",
+			"name": "translate_next_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Next",
+			"append": ""
+		},
+		{
+			"key": "field-translate_navigate_previous_ko",
+			"label": "",
+			"name": "translate_navigate_previous_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Navigate to previous page",
+			"append": ""
+		},
+		{
+			"key": "field-translate_navigate_next_ko",
+			"label": "",
+			"name": "translate_navigate_next_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Navigate to next page",
+			"append": ""
+		},
+		{
+			"key": "field-translate_sound_transit_logo_ko",
+			"label": "",
+			"name": "translate_sound_transit_logo_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Sound Transit logo",
+			"append": ""
+		},
+		{
+			"key": "field-translate_enter_email_address_ko",
+			"label": "",
+			"name": "translate_enter_email_address_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Enter your email address",
+			"append": ""
+		},
+		{
+			"key": "field-translate_subscribe_now_ko",
+			"label": "",
+			"name": "translate_subscribe_now_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Subscribe now",
+			"append": ""
+		},
+		{
+			"key": "field-translate_subscribe_for_updates_ko",
+			"label": "",
+			"name": "translate_subscribe_for_updates_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Subscribe for updates",
+			"append": ""
+		},
+		{
+			"key": "field-translate_click_to_enlarge_ko",
+			"label": "",
+			"name": "translate_click_to_enlarge_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Click to enlarge",
+			"append": ""
+		},
+		{
+			"key": "field-translate_expand_section_ko",
+			"label": "",
+			"name": "translate_expand_section_ko",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"allow_in_bindings": 0,
+			"placeholder": "",
+			"prepend": "Expand section",
+			"append": ""
+		}
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-options-translations"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1754600100
+}

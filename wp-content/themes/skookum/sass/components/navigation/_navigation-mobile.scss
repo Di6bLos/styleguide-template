@@ -1,0 +1,209 @@
+@use './../../utilities/variables' as *;
+
+/* Main Navigation Container */
+.main-navigation {
+	width: 100%;
+    padding: 10px 0;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-primary;
+    position: sticky;
+    z-index: 4;
+    top: 0;
+
+    // Sticky navigation shadow effect
+    &.stuck {
+        box-shadow: $box-shadow;
+        border: none;
+    }
+}
+
+/* Primary Menu Container */
+.menu-primary-menu-container {
+    max-height: 0; // Collapsed by default
+	padding: 0;
+    overflow: hidden;
+    transition: $transition;
+
+}
+
+/* Primary Menu Container - Toggle State */
+.main-navigation.mobile-toggled .menu-primary-menu-container {
+	max-height: 100vh; // Expand to full viewport height
+	overflow-y: scroll;
+}
+
+/* Primary Menu */
+.primary-menu {
+	display: flex; // Always display but use max-height for animation
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+	padding: 30px 0 10px;
+}
+
+/* Menu Item */
+.menu-item {
+    font-size: $font-size-small;
+    padding: 0px;
+	margin: 0px;
+    cursor: pointer;
+    transition: $transition;
+    text-align: center;
+    display: block;
+	width: 100%;
+}
+
+/* Menu Item Links */
+.menu-item > a {
+    display: inline-block;
+    text-decoration: none;
+    text-wrap: pretty;
+    margin: 0;
+	padding: 20px 0; // Controls the spacing between menu items
+    width: 100%;
+
+    .menu-link-text {
+        display: inline-block;
+    }    
+
+	// Animated underline hover effect
+	.menu-link-text {
+		@include underline-effect(2px);
+	}
+
+	// Hover and active states
+	&:hover,
+	&[aria-current="page"] {
+		color: initial;
+
+		.menu-link-text {
+			background-size: 100% 2px; // Show underline on hover and active
+		}
+	}
+
+    &:focus {
+        outline: none;
+    }
+}
+
+/* Dropdown Menu Items (with children) */
+// Dropdown arrow icon
+.menu-item-has-children > a .sub-menu-icon {
+    color: $color-primary;
+    background-color: $color-transparent;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 5px;
+    background: url('./../icons/down-menu-arrow.svg') no-repeat center;
+    width: 15px;
+    height: 10px;
+    transition: $transition;
+    display: inline-block;
+}
+
+// Maintain underline on toggled dropdown parent links
+.menu-item-has-children:has(.current-menu-item):not(.toggled) > a, // Keep underline when a nested menu item is active
+.menu-item-has-children.toggled > a {
+    color: initial;
+
+    // Show underline when dropdown is open
+    .menu-link-text {
+        background-size: 100% 2px; // Show underline when toggled
+    }
+}
+
+// Rotate arrow when dropdown is open
+.menu-item-has-children.toggled > a .sub-menu-icon {
+    transform: rotate(180deg) translateY(2px);
+}
+
+// Prevent double-click on dropdown parent links
+.menu-item-has-children > a:active {
+    pointer-events: none;
+}
+
+/* Dropdown/Submenu Containers */
+.dropdown {
+	position: relative;
+    display: flex;
+	max-height: 0px; // Start hidden
+    transition: $transition;
+	background-color: $color-white;
+	overflow: hidden;
+	
+    // Expand when toggled
+    &.toggled {
+		max-height: 1000px; // Arbitrary large value to allow expansion
+    }
+	
+	.dropdown-inner {
+		margin: 0px;
+		width: 100%;
+		padding: 0px;
+	}
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+    border: 1px solid $color-primary;
+    background-color: $color-transparent;
+    padding: rem(5px);
+    border-radius: rem(5px);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Hover state
+    &:hover {
+        background-color: $color-transparent;
+        border-color: $color-primary;
+    }
+}
+
+/* Hamburger Menu Icon */
+.menu-toggle__icon {
+    display: block;
+    background-color: $color-primary;
+    height: 3px;
+    width: 25px;
+    margin: 10px 0;
+    position: relative;
+    transition: all 0.35s ease-out;
+    transform-origin: center;
+
+    // Top and bottom lines of hamburger
+    &::before,
+    &::after {
+        content: " ";
+        display: block;
+        background-color: $color-primary;
+        height: 3px;
+        position: relative;
+        top: -7px;
+        transition: all 0.15s ease-out; /*taken down to hide quicker*/
+        transform-origin: center;
+    }
+
+    // Hamburger bottom line positioning
+    &::after {
+        top: 4px;
+        transition: all 0.35s ease-out;
+    }
+}
+
+/* Hamburger Menu - Open State */
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon {
+    transform: rotate(45deg); // Rotate main line
+
+    // Hide top line
+    &::before {
+        opacity: 0;
+    }
+
+    // Rotate bottom line to form X
+    &::after {
+        transform: rotate(-90deg) translateX(7px);
+    }
+}

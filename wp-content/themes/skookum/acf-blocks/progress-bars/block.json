@@ -1,0 +1,16 @@
+{
+    "name": "acf/progress-bars",
+    "title": "Progress Bar",
+    "description": "A progress bar block to visually represent a measured metric.",
+    "category": "text",
+    "icon": "chart-bar",
+    "keywords": ["progress bar", "measurement"],
+    "viewScript": "file:./progress-bars.js",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "progress-bars.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

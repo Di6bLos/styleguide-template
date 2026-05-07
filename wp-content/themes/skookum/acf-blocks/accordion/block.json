@@ -1,0 +1,17 @@
+{
+    "name": "acf/accordion",
+	"title": "Accordion",
+    "description": "An accordion block for displaying collapsible content.",
+    "category": "text",
+    "icon": "feedback",
+    "keywords": [""],
+    "viewScript": "file:./accordion.js",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "accordion.php"
+    },
+    "supports": {
+        "anchor": true,
+        "innerBlocks": true
+    }
+}

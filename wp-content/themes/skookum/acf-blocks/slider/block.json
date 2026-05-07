@@ -1,0 +1,28 @@
+{
+    "name": "acf/slider",
+	"title": "Slider",
+    "description": "A slider block for displaying images or content in a sliding format.",
+    "category": "media",
+    "icon": "images-alt2",
+    "keywords": ["carousel", "image"],
+    "viewScript": [
+        "file:./slider.js",
+        "file:../image-zoom/image-zoom.js"
+    ],
+    "script": "swiper-js",
+    "style": "swiper-css",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "slider.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": ["wide", "full"]
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "wide"
+        }
+    }
+}

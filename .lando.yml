@@ -1,0 +1,7 @@
+name: sandbox-wp
+recipe: wordpress
+config:
+  php: '8.1'
+  database: mysql
+  via: apache
+  webroot: .

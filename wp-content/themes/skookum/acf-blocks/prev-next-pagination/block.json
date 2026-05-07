@@ -1,0 +1,15 @@
+{
+    "name": "acf/prev-next-pagination",
+	"title": "Prev/Next Pagination",
+    "description": "Add Prev/Next Pagination which will show links for the next or previous page under a parent page ordered by date.",
+    "category": "design",
+    "icon": "admin-links",
+    "keywords": ["pagination", "navigation"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "prev-next-pagination.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

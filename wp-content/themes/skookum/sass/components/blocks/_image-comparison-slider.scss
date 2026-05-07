@@ -1,0 +1,90 @@
+@use './../../utilities/variables' as *;
+
+.compare-images {
+	width: 100%;
+	position: relative;
+	overflow: visible;
+	z-index: 2;
+
+	figure {
+		margin:  0;
+		padding:  0;
+		overflow: hidden;
+
+		figcaption {
+			font-size: clamp($font-size-xsmall, 2vw, $font-size-medium);
+			color:  $color-white;
+			background:  $color-overlay;
+			position: absolute;
+			padding: .25em .5em;
+			margin: .5em;
+			bottom: 0;
+			overflow: hidden;
+			width: max-content; // Currently allows figcaption to NOT collapse when resizer is dragged to the left edge, and disappear behind it. This will cause issues with long captions (argument: captions in image shouldnt be very long); working on solution.
+		}
+	}
+
+	img {
+		width: 100%;
+		display: block;
+		max-inline-size: none;
+		max-block-size: none;
+		max-height: calc(100vh - 100px); // Keep image from being taller than viewport, but will stretch to fill width
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
+	.before-image {
+		position: absolute;
+		height: 100%;
+		width: 50%;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: 2; 
+	}
+
+    .after-image {
+		display: block;
+
+        figcaption {
+            right:  0;
+        }
+	}
+
+	.resizer {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		z-index: 5;
+		top: 0;
+		left: 50%;
+		height: 100%;
+		width: 4px;
+		background: $color-white;
+		cursor: ew-resize;
+		/*Stop vertical scrolling on touch*/
+		-ms-touch-action:  pan-y;
+		touch-action:  pan-y;
+
+        .resizer__icon {
+            background: $color-secondary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            margin:  0 0 0 -18px;
+            padding: 4px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid $color-white;
+
+            svg {
+                fill: $color-white;
+            }
+        }
+	}
+}

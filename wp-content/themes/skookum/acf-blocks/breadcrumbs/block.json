@@ -1,0 +1,16 @@
+{
+    "name": "acf/breadcrumbs",
+	"title": "Breadcrumbs",
+    "description": "Add a breadcrumb navigation to your page.",
+    "category": "design",
+    "icon": "admin-links",
+    "keywords": ["navigation"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "breadcrumbs.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": ["wide", "full"]
+    }
+}

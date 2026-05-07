@@ -1,0 +1,51 @@
+@use"../../utilities/variables" as *;
+
+.progress-bars {
+    padding: 25px 20px 20px 20px;
+    background-color: $color-gray-light;
+    border-radius: 10px;
+
+    .progress-bar {
+        
+        &__wrapper {
+            padding: 0px 0px 20px 0px;
+        }
+
+        &__labels {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 0px 5px 0px;
+
+            p {
+                margin: 0px 0px 0px 0px; // This overwrites the default margins P tags has for a better look
+                line-height: 1;
+            }
+        }
+
+        &__fill {
+            width: 100%;
+            border-radius: 10px;
+            height: 10px;
+
+            &::-webkit-progress-bar {
+                background: $color-white;
+                border-radius: 10px;
+            }
+            
+            &::-webkit-progress-value {
+                background: $color-tertiary;
+                border-radius: 10px;
+            }
+
+            &::-moz-progress-track {
+                background: $color-white;
+                border-radius: 10px;
+            }
+            
+            &::-moz-progress-bar {
+                background: $color-tertiary;
+                border-radius: 10px;
+            }
+        }
+    }
+}

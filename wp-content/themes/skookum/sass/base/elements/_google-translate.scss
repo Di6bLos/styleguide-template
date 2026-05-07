@@ -1,0 +1,13 @@
+@use '../../utilities/variables' as *;
+
+#google_translate_element {
+    div, a {
+        color: $color-charcoal;
+    }
+    
+    select.goog-te-combo {
+        color: $color-charcoal;
+        background-color: $color-white;
+        padding: 0.5em;
+    }
+} 

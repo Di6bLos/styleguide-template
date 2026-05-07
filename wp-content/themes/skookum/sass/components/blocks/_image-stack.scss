@@ -1,0 +1,62 @@
+@use"../../utilities/variables" as *;
+
+.image-stack-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	
+	@media (min-width: $bp-small) {
+		flex-direction: row;
+	}
+}
+
+.image-stack {
+	position: relative;
+	width: 100%;
+
+	img,
+	&__layer {
+		width: 100%;
+		height: auto;
+	}
+
+	img {
+		object-fit: contain;
+	}
+
+	&__base {
+		position: relative;
+		z-index: 1; // Base layer at the bottom
+	}
+
+	&__additional-layer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2; // Additional layers above the base layer
+		transition: $transition;
+	}
+
+	&__additional-layer.hidden {
+		opacity: 0;
+		pointer-events: none; // Prevent interaction when hidden
+	}
+}
+
+.layers-checkbox-group {
+	&__header {
+		margin-top: 0;
+	}
+
+	&__toggle-btn {
+		white-space: nowrap;
+		margin-bottom: 5px;
+		font-size: $font-size-small;
+	}
+
+	&__item {
+		display: flex;
+		gap: 5px;
+		padding-bottom: 5px;
+	}
+}

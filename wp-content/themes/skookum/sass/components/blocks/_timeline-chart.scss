@@ -1,0 +1,110 @@
+@use '../../utilities/variables' as *;
+
+// Controls the width and number of columns in the timeline.
+// The first column,[minmax(180px, 1fr)] is for activity labels, and the rest are for times.
+$grid-columns: minmax(180px, 1fr) repeat(var(--tt-col-count), minmax(70px, 1fr));
+
+.timeline-chart {
+	border: 1px solid $color-gray;
+	border-radius: 5px;
+	overflow: hidden;
+
+	&__scroll {
+		overflow-x: auto;
+	}
+
+	&__header {
+		display: grid;
+		grid-template-columns: $grid-columns;
+		color: $color-white;
+		font-family: $font-family-primary;
+		font-size: $font-size-xsmall;
+		font-weight: 700;
+	}
+
+	&__header-cell {
+		padding: $spacing-xsmall;
+		text-align: center;
+		position: sticky;
+		top: 0;
+		z-index: 2;
+		background-color: $color-primary;
+
+		&--title {
+			left: 0;
+			z-index: 3;
+			text-align: left;
+		}
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: $grid-columns;
+		align-items: center;
+		min-height: 40px;
+	}
+
+	&__row:last-child .timeline-chart__cell,
+	&__row:last-child .timeline-chart__activity {
+		border-bottom: none;
+	}
+
+	&__activity,
+	&__cell {
+		align-self: stretch;
+		border-bottom: 1px solid $color-gray;
+	}
+
+	&__activity {
+		padding: $spacing-xsmall;
+		font-size: $font-size-xsmall;
+		position: sticky;
+		left: 0;
+		z-index: 2;
+		background-color: $color-white;
+		display: flex;
+		align-items: center;
+	}
+
+	&__cell {
+		grid-row: 1;
+		grid-column: var(--col);
+	}
+
+	&__cell--shaded {
+		background-color: $color-gray-light;
+	}
+
+	// The bar representing the activity time span.
+	&__bar {
+		grid-row: 1;
+		grid-column: var(--col-start) / var(--col-end);
+		// Centers the bar within the grid columns it spans, regardless of how many columns it covers.
+		margin-inline: calc(50% / (var(--col-end) - var(--col-start)));
+		height: 22px;
+		border-radius: 3px;
+		background-color: $color-secondary;
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 $spacing-xsmall;
+		margin-block: $spacing-xsmall;
+
+		&--error {
+			background-color: $color-warning-red;
+			grid-column: 1 / -1;
+			margin-inline: 0;
+		}
+	}
+
+	&__bar-label {
+		color: $color-white;
+		font-size: $font-size-xsmall;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 1;
+	}
+}

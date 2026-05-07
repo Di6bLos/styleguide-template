@@ -1,0 +1,15 @@
+{
+    "name": "acf/pdf-embed",
+	"title": "PDF Embed",
+    "description": "Embed a viewable PDF file into the page.",
+    "category": "embed",
+    "icon": "pdf",
+    "keywords": [],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "pdf-embed.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

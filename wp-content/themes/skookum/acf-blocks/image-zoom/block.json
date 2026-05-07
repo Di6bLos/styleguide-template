@@ -1,0 +1,16 @@
+{
+    "name": "acf/image-zoom",
+	"title": "Image Zoom",
+    "description": "Add an image with a zoom in/out feature.'",
+    "category": "media",
+    "icon": "plus-alt",
+    "keywords": ["zoom", "magnify"],
+    "viewScript": "file:./image-zoom.js",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "image-zoom.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

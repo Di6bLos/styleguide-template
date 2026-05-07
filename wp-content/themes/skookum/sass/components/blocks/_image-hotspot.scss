@@ -1,0 +1,138 @@
+@use"../../utilities/variables" as *;
+
+.image-hotspot {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+}
+
+/* Marker Styles */
+.hotspot {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+
+	/* Ensure hotspot toolip is above other markers when active */
+	&:hover,
+	&:focus,
+	&.active {
+		z-index: 3;
+	}
+
+	&__marker {
+	position: relative;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	padding: 8px 5px 5px;
+	background: $color-white;
+	border: 3px solid $color-tertiary;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: $transition;
+
+		@media (min-width: $bp-medium) {
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+	&__marker:hover,
+	&:focus &__marker {
+		border-color: $color-primary;
+		background: $color-gray-light;
+		transform: scale(1.1);
+
+		svg {
+			fill: $color-primary;
+		}
+	}
+	
+	&__icon {
+		svg {
+			fill: $color-tertiary;
+			width: 15px;
+			height: 15px;
+			transition: $transition;
+	
+			@media (min-width: $bp-medium) {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+	
+	/* Tooltip Styles */
+	&__tooltip {
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 15px;
+		background: $color-black;
+		color: $color-white;
+		padding: 10px 15px;
+		border-radius: 5px;
+		white-space: nowrap;
+		width: max-content;
+		max-width: 300px;
+		opacity: 0;
+		visibility: hidden;
+		transition: $transition;
+		
+		/* Ensure tooltip content can receive focus */
+		&:focus-within {
+			opacity: 1;
+			visibility: visible;
+			transform: translateX(-50%) translateY(-5px);
+		}
+	}
+	
+	&__tooltip-content {
+		white-space: normal;
+	}
+	
+	&__title {
+		margin: 0;
+		font-size: 16px;
+		font-weight: 900;
+	}
+	
+	&__description {
+		color: $color-white;
+		display: inline-block;
+		font-size: 14px;
+	}
+
+	a {
+		color: $color-white;
+		
+		&:focus,
+		&:hover {
+			color: $color-tertiary;
+		}
+	}
+	
+	&__tooltip-arrow {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 0;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 8px solid $color-black;
+	}
+	
+	/* Show tooltip on hover */
+	&:hover &__tooltip,
+	&:focus &__tooltip,
+	&.active &__tooltip {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(-50%) translateY(-5px);
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "skookum",
+  "version": "1.0.0",
+  "description": "A starter theme based off of underscores.",
+  "author": "BBogard",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "engines": {
+    "node": "22.18.0"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "sass": "^1.70.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm:front\" \"npm:editor\"",
+    "front": "sass --watch sass/style.scss css/style.css --style compressed",
+    "editor": "sass --watch sass/editor/editor.scss css/editor.css --style compressed",
+    "build-front": "sass sass/style.scss css/style.css --style compressed",
+    "build-editor": "sass sass/editor/editor.scss css/editor.css --style compressed",
+    "build": "concurrently \"npm:build-front\" \"npm:build-editor\""
+  }
+}

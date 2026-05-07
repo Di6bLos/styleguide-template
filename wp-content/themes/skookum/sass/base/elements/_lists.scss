@@ -1,0 +1,31 @@
+@use './../../utilities/variables' as *;
+
+ul,
+ol {
+	margin: 0.5em 0 1em 0;
+	padding: 0 0 0 1.5em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+li {
+	margin-bottom: .5em;
+}
+
+ul ul {
+	list-style: circle;
+}

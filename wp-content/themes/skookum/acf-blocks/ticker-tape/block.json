@@ -1,0 +1,23 @@
+{
+    "name": "acf/ticker-tape",
+	"title": "Ticker Tape",
+    "description": "Ticker tape with multiple entries.",
+    "category": "layout",
+    "icon": "leftright",
+    "keywords": ["news", "scroll", "stock"],
+    "viewScript": "file:./ticker-tape.js",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "ticker-tape.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": ["wide", "full"]
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        }
+    }
+}

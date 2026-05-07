@@ -1,0 +1,9 @@
+@use './../../utilities/variables' as *;
+
+body {
+	background: $color-white; // Fallback for when there is no custom background color defined.
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}

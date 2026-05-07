@@ -1,0 +1,61 @@
+{
+	"key": "group-vimeo-embed",
+	"title": "Vimeo Embed",
+	"fields": [
+		{
+			"key": "field-vimeo_url",
+			"label": "URL",
+			"name": "vimeo_url",
+			"aria-label": "",
+			"type": "url",
+			"instructions": "Place vimeo video url here.",
+			"required": 1,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"width": "",
+			"height": ""
+		},
+		{
+			"key": "field-vimeo_caption",
+			"label": "Caption",
+			"name": "vimeo_caption",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": ""
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "block",
+				"operator": "==",
+				"value": "acf\/vimeo-embed"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": "",
+	"active": true,
+	"description": "",
+	"show_in_rest": 0
+}

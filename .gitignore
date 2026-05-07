@@ -1,0 +1,7 @@
+# ignore OS-generated hidden files
+.DS_Store
+.DS_Store?
+.vscode/
+
+# ignore uploads
+/wp-content/uploads/

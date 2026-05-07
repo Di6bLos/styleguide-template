@@ -1,0 +1,54 @@
+@use './../../utilities/variables' as *;
+
+header {
+    color: $color-primary;
+
+	.entry-header {	
+		color: $color-primary;
+
+		h1 {
+			position: relative;
+			z-index: 2;
+		}
+
+		&.featured-image {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $color-white;
+			height: 40vh;
+			background-color: $color-primary; // fallback color if image doesn't load
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			overflow: hidden;
+
+			&::after { // overlay for background image to darken it so text is more readable
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: $color-overlay;
+				z-index: 1;
+			}
+		}
+	}
+}
+
+.site-header {
+	& > .container {
+		padding-block: 1rem;
+	}
+
+	.row {
+		justify-content: space-between;
+		align-items: end;
+	}
+
+	#google_translate_element {
+		align-self: center;
+	}
+}

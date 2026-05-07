@@ -1,0 +1,12 @@
+@use './../utilities/variables' as *;
+
+// Error message for missing blocks.
+.missing-block-error {
+	font-size: $font-size-xlarge;
+	font-weight: bold;
+	color: $color-warning-red;
+	border: 2px solid $color-warning-red;
+	text-align: center;
+	padding-block: $spacing-large;
+	margin: $spacing-medium
+}

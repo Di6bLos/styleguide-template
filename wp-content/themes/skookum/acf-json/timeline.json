@@ -1,0 +1,132 @@
+{
+	"key": "group-timeline",
+	"title": "Timeline",
+	"fields": [
+		{
+			"key": "field-timeline_row",
+			"label": "Timeline",
+			"name": "timeline_row",
+			"aria-label": "",
+			"type": "repeater",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"layout": "row",
+			"pagination": 0,
+			"min": 0,
+			"max": 0,
+			"collapsed": "",
+			"button_label": "Add Time",
+			"rows_per_page": 20,
+			"sub_fields": [
+				{
+					"key": "field-timeline_active_beacon",
+					"label": "Active",
+					"name": "timeline_active_beacon",
+					"aria-label": "",
+					"type": "true_false",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"message": "",
+					"default_value": 0,
+					"ui": 0,
+					"ui_on_text": "",
+					"ui_off_text": "",
+					"parent_repeater": "field-timeline_row"
+				},
+				{
+					"key": "field-timeline_primary_header",
+					"label": "Primary Header",
+					"name": "timeline_primary_header",
+					"aria-label": "",
+					"type": "text",
+					"instructions": "",
+					"required": 1,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"placeholder": "",
+					"prepend": "",
+					"append": "",
+					"parent_repeater": "field-timeline_row"
+				},
+				{
+					"key": "field-timeline_subheading",
+					"label": "Sub Header",
+					"name": "timeline_subheading",
+					"aria-label": "",
+					"type": "text",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"placeholder": "",
+					"prepend": "",
+					"append": "",
+					"parent_repeater": "field-timeline_row"
+				},
+				{
+					"key": "field-timeline_content",
+					"label": "Content",
+					"name": "timeline_content",
+					"aria-label": "",
+					"type": "wysiwyg",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"tabs": "all",
+					"toolbar": "basic",
+					"media_upload": 1,
+					"delay": 0,
+					"parent_repeater": "field-timeline_row"
+				}
+			]
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "block",
+				"operator": "==",
+				"value": "acf\/timeline"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": "",
+	"active": true,
+	"description": "",
+	"show_in_rest": 0
+}

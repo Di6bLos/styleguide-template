@@ -1,0 +1,67 @@
+@use '../../utilities/variables' as *;
+
+.page-header {
+	margin: 40px 0 20px;
+
+	@media (min-width: $bp-medium) {
+		margin: 60px 0 30px;
+	}
+}
+
+.entry {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.5rem 0;
+	width: 100%;
+
+	&:not(:last-of-type) {
+		border-bottom: 1px solid $color-secondary;
+	}
+
+	@media (min-width: $bp-small) {
+		flex-direction: row;
+	}
+
+	&__thumbnail {
+		flex: 1;
+		overflow: hidden;
+		align-self: center;
+
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			aspect-ratio: 4/3;
+		}
+	}
+
+	&__content {
+		flex: 2;
+
+		a {
+			color: $color-primary;
+			text-decoration: none;
+		}
+
+		h3 {
+			@include underline-effect(3px);
+			font-size: $font-size-xlarge;
+			font-weight: 700;
+			margin: 10px 0;
+
+			@media (min-width: $bp-large) {
+				font-size: $font-size-xxlarge;
+			}
+		}
+	}
+
+	&__categories {
+		text-transform: uppercase;
+		font-size: $font-size-medium;
+	}
+
+	&__date {
+		font-size: $font-size-small;
+	}
+}

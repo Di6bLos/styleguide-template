@@ -1,0 +1,23 @@
+{
+    "name": "acf/image-comparison-slider",
+	"title": "Image Comparison Slider",
+    "description": "Compare two images using a vertical slider. Each image has an optional caption.",
+    "category": "media",
+    "icon": "image-flip-horizontal",
+    "keywords": ["before and after"],
+    "viewScript": "file:./image-comparison-slider.js",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "image-comparison-slider.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": ["wide", "full"]
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "wide"
+        }
+    }
+}

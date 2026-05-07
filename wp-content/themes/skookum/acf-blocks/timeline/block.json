@@ -1,0 +1,17 @@
+{
+    "name": "acf/timeline",
+	"title": "Timeline",
+    "description": "A timeline block for displaying a series of events or milestones.",
+    "category": "text",
+    "icon": "clock",
+    "keywords": ["milestones", "events", "history"],
+    "viewScript": "file:./timeline.js",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "timeline.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": ["wide", "full"]
+    }
+}

@@ -1,0 +1,27 @@
+@use './../../utilities/variables' as *;
+
+// To target individual icons we can use attribute selectors. 
+
+// Example:
+// svg use[href="images/icons.svg#expand-icon"] {
+//     fill: red;
+
+//     &:hover {
+//         fill: blue;
+//     }
+// }
+
+svg {
+	fill: $color-gray-dark;
+	stroke: $color-gray-dark;
+	width: 40px;
+	height: 40px;
+
+    use {
+        transition: $transition;
+    }
+}
+
+.icon {
+	fill: $color-secondary;
+}

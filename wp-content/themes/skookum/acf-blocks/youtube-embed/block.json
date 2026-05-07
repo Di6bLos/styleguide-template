@@ -1,0 +1,15 @@
+{
+    "name": "acf/youtube-embed",
+	"title": "YouTube Embed",
+    "description": "An embedded YouTube video with optional caption.",
+    "category": "embed",
+    "icon": "youtube",
+    "keywords": ["video", "embed"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "youtube-embed.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

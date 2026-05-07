@@ -1,0 +1,35 @@
+@use './../../utilities/variables' as *;
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: $color-primary;
+	border: 1px solid $color-primary;
+	border-radius: 3px;
+	padding: 3px;
+
+	&:focus {
+		color: $color-primary;
+	}
+}
+
+select {
+	border: 1px solid $color-primary;
+}
+
+textarea {
+	width: 100%;
+}

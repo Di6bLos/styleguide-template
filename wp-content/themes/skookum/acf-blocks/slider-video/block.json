@@ -1,0 +1,25 @@
+{
+    "name": "acf/slider-video",
+	"title": "Video Slider",
+    "description": "A slider block for displaying videos in a sliding format.",
+    "category": "media",
+    "icon": "images-alt2",
+    "keywords": ["carousel", "image"],
+    "viewScript": "file:./slider-video.js",
+    "script": "swiper-js",
+    "style": "swiper-css",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "slider-video.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": ["wide", "full"]
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "wide"
+        }
+    }
+}

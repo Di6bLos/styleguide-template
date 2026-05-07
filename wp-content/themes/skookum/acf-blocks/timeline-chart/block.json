@@ -1,0 +1,16 @@
+{
+    "name": "acf/timeline-chart",
+	"title": "Timeline Chart",
+    "description": "A timeline chart to show activities across a time span.",
+    "category": "layout",
+    "icon": "editor-table",
+    "keywords": ["table", "timeline", "history", "chart", "grid"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "timeline-chart.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": ["wide", "full"]
+    }
+}

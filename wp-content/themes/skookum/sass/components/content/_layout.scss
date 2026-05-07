@@ -1,0 +1,83 @@
+@use "../../utilities/variables" as *;
+
+// Layout and spacing for content in header, navigation, and footer.
+.container {
+	width: 100%;
+	max-width: var(--wp--style--global--wide-size);
+	margin: 0 auto;
+	padding: 0 $spacing-small;
+	
+	@media (min-width: $bp-medium) {
+		padding: 0 $spacing-medium;
+	}
+}
+
+.row {
+	@media (min-width: $bp-medium) {
+		display: flex;
+	}
+}
+
+// Layout and spacing for content in posts and pages.
+.site-main {
+	padding-inline: $spacing-small;
+	padding-block-end: $spacing-medium;
+
+	@media (min-width: $bp-medium) {
+		padding-inline: $spacing-medium;
+	}
+
+	.container {
+		padding: 0;
+	}
+}
+
+
+.container--constrained > * {
+	max-width: var(--wp--style--global--content-size);
+	margin-inline: auto;
+}
+
+.alignleft {
+	
+	/*rtl:ignore*/
+	float: left;
+	
+	/*rtl:ignore*/
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+	
+	/*rtl:ignore*/
+	float: right;
+	
+	/*rtl:ignore*/
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.container--constrained .aligncenter {
+	clear: both;
+	margin-bottom: 1.5em;
+}
+
+.container--constrained .alignwide {
+	width: 100%;
+	max-width: var(--wp--style--global--wide-size);
+}
+
+.container--constrained .alignfull {
+	min-width: 100%;
+	margin-inline: -$spacing-small;
+
+	@media (min-width: $bp-medium) {
+		min-width: calc(100% + $spacing-medium * 2);
+		margin-inline: -$spacing-medium;
+	}
+}
+
+.hide {
+	display: none;
+}

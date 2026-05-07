@@ -1,0 +1,133 @@
+@use"../../utilities/variables" as *;
+
+.image-zoom {
+	position: relative;
+
+    &__wrapper {
+        position: relative;
+    }
+
+	button.zoom-btn {
+		color: $color-white;
+		background: $color-overlay;
+        border-color: $color-white;
+        border-width: 1px;
+		position: absolute;
+        bottom: 12px;
+        right: 5px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        width: 40px;
+        height: 40px;
+        display: flex;
+		align-items: center;
+		justify-content: center;
+        padding: 2px;
+        margin: 0;
+
+		&:hover {
+			transform: scale(1.125);
+			background: $color-overlay-dark;
+		}
+
+		svg {
+			fill: $color-white;
+		}
+	}
+}
+
+/* (background) */
+.zoom-overlay {
+	display: none; /* Hidden by default */
+	position: fixed;
+	padding: 6rem 1rem 2rem; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: $color-black; /* Fallback color */
+	background: $color-overlay-dark; /* Black w/ opacity */
+	/* Center the image */
+	flex-direction: column; 
+	align-items: center;
+	justify-content: center;
+	z-index: 10; /* Sit on top */
+
+	&.open {
+		display: flex;
+	}
+
+	.zoom-overlay__content {
+		display: flex;
+		width: 100%;
+		height: fit-content;
+		overflow: hidden;
+		background-color: $color-black;
+		text-align: center;
+		border-radius: 0;
+		padding: 1rem;
+		max-width: $bp-large;
+		
+		img {
+			margin: 0 auto;
+			object-fit: contain;
+		}
+		
+		@media (min-width: $bp-medium) {
+			padding: 2rem;
+		}
+	}
+
+	/* Caption (Pulled from figcaptions) */
+	.zoom-overlay__caption {
+		display: block;
+		max-width: 700px;
+		text-align: center;
+		color: $color-gray;
+		padding: .5rem;
+		height: fit-content;
+	}
+
+	.button-container {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		font-weight: bold;
+		transition: 0.3s;
+		z-index: 12;
+		display: flex;
+		gap: .5em;
+
+		.btn {
+			color: $color-white;
+			cursor: pointer;
+			border: 2px solid transparent;
+			line-height: 1;
+			margin: 10px 0;
+			padding: 10px 15px;
+		}
+
+		.btn:hover {
+			background-color: $color-black;
+			border: 2px solid $color-white;
+		}
+	}
+}
+
+/* Add Animation - Zoom in the Image */
+.zoom-overlay__content, .zoom-overlay__caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+
+.zoom-overlay__image {
+	transform-origin: center;
+	cursor: grab;
+	user-select: none; /* Prevent text selection during dragging */
+}

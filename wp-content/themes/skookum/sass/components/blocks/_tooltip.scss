@@ -1,0 +1,101 @@
+@use '../../utilities/variables' as *;
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 3px;
+    
+    &::after {
+        content: 'i';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -2px;
+        bottom: 7px;
+        border-radius: 50%;
+        border: 2px solid black;
+        font-size: $font-size-xsmall;
+    }
+
+    &__btn {
+        font-style: italic;
+        padding: 0 20px 0 0; 
+        position: relative;
+        margin: inherit;
+        font-weight: 700;
+    
+        &::after {
+            position: absolute;
+            content: attr(data-tooltip);
+            display: none;
+            background-color: $color-primary;
+            color: $color-white;
+            text-align: center;
+            border-radius: 5px;
+            width: max-content;
+            max-width: 320px;
+            padding: 25px 20px;
+            z-index: 4;
+            width: 90%;
+            position: fixed;
+            left: 50%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: normal;
+
+            @media (min-width: $bp-small) {
+                padding: 10px 15px;
+                position: absolute;
+                bottom: calc(100% + 10px);
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: max-content;
+                max-width: 320px;
+            }
+        }
+
+        @media (min-width: $bp-small) {
+            &::before {
+                content: '';
+                display: none;
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-width: 10px 8px 0 8px;
+                border-style: solid;
+                border-color: $color-primary $color-transparent $color-transparent $color-transparent;
+            }
+        }
+
+        &.active {
+            &::after,
+            &::before {
+                display: block;
+            }
+        }
+    }
+}
+
+// Tooltip inside a list
+li .tooltip {
+    &::after {
+        bottom: 3px;
+    }
+}
+
+// Tooltip with white text color
+.has-white-color {
+    .tooltip {
+        color: $color-white;
+
+        &::after {
+            border: 1px solid $color-white;
+        }
+    }
+}

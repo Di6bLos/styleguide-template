@@ -1,0 +1,15 @@
+@use "../../utilities/variables" as *;
+
+.breadcrumbs {
+    padding-bottom: 15px;
+
+    a,
+    .divider {
+        font-weight: bold;
+        color: $color-secondary;
+    }
+
+    a {
+        @include underline-effect(2px);
+    }
+}

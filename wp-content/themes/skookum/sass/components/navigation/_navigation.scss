@@ -1,0 +1,66 @@
+@use './../../utilities/variables' as *;
+
+/* Desktop Navigation Styles */
+
+@media (min-width: $bp-medium) {
+    /* Primary Menu Container */
+    div.menu-primary-menu-container {
+        max-height: fit-content;
+        overflow: visible;
+    }
+
+    /* Primary Menu */
+    .primary-menu {
+        flex-direction: row;
+        justify-content: flex-start; // Align menu items to the left
+        width: 100%;
+        padding: 0px;
+        gap: 20px;
+    };
+
+    /* Menu Item */
+    .menu-item {
+        width: auto;
+        position: relative;
+        text-align: left;
+    }
+
+    .menu-item > a {
+        padding: 15px 0; // controls the spacing between menu items
+    }
+    
+    /* Dropdown/Submenu Containers */
+    .dropdown {
+        position: absolute;
+        min-width: max-content;
+        top: 58px;
+        left: -15px; // Set position to line up with the left edge of the parent menu item
+        // Uncomment the next two lines if you want to center the dropdown under the parent menu item
+        // left: 50%;
+        // transform: translateX(-50%);
+
+        .sub-menu {
+            border: 1px solid $color-primary;
+            border-top: none;
+            padding: 0px 15px 15px;
+        }
+
+        // Controls the width of dropdown items
+        .menu-item {
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+
+    // Keeps nested dropdowns inside the parent dropdown
+    .dropdown .dropdown {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    /* Mobile Menu Toggle */ 
+    .menu-toggle {
+        display: none; // Hide toggle button on larger screens
+    }
+}

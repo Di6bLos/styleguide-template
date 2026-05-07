@@ -1,0 +1,61 @@
+{
+    "key": "group-youtube_embed",
+    "title": "YouTube Embed",
+    "fields": [
+        {
+            "key": "field-youtube_link",
+            "label": "Link",
+            "name": "youtube_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "For best results, use the URL created when using the share > embed option on YouTube. <br/> Example: https://www.youtube.com/embed/VIDEO_ID.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
+            "key": "field-youtube_caption",
+            "label": "Caption",
+            "name": "youtube_caption",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/youtube-embed"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

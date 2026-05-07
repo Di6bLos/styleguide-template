@@ -1,0 +1,16 @@
+{
+    "name": "acf/image-stack",
+	"title": "Image Stack",
+    "description": "A block that displays an image with stackable layers.",
+    "category": "media",
+    "icon": "images-alt2",
+    "keywords": ["layers"],
+    "viewScript": "file:./image-stack.js",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "image-stack.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

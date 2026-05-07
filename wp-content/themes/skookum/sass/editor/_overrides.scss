@@ -1,0 +1,117 @@
+@use './../utilities/variables' as *;
+@use './../base/elements/buttons' as *;
+
+:root :where(.editor-styles-wrapper),
+.editor-styles-wrapper { // This is the container of the editor. Put all overrides within.
+    padding: 0px 30px;
+
+    .prev-next-pagination__link {
+        pointer-events: none;
+    }
+
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+        font-size: $font-size-xsmall;
+
+        @media (min-width: $bp-small) {
+            font-size: $font-size-small;
+        }
+    }
+
+    iframe {
+        height: revert-layer;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    textarea {
+        color: $color-black;
+        border: 1px solid $color-black;
+
+        &:focus {
+            color: $color-black;
+        }
+    }
+
+    select {
+        border: 1px solid $color-black;
+    }
+
+   .image-zoom .zoom-btn { // Hide zoom icon - we don't want it to work in the editor.
+        display: none;
+    }
+
+    .image-comparison-slider { // Set min-height to force this to work in the example window.
+        min-height: 400px;
+    }
+
+    .swiper {
+        height: auto;
+        aspect-ratio: 16 / 9;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // Allows accordion content to be visible in editor preview to add innerblocks.    
+    .accordion__content {
+        grid-template-rows: 1fr;
+        
+        &-inner {
+            overflow: visible;
+        }
+    }
+
+    .accordion__content:has(.block-editor-default-block-appender__content) {
+        padding: 20px 10px;
+    }
+
+    .accordion__container:has(.block-editor-default-block-appender),
+    .accordion__container:has(.block-editor-rich-text__editable) {
+        .accordion__title {
+            border-bottom: 1px solid $color-primary;
+
+            button.accordion__button span {
+                transform: rotate(90deg);
+
+                &:last-child {
+                    left: 50%;
+                    right: 50%;
+                }
+            }
+        }
+    }
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    // This is the variable font weight range. When linking to individual files, specify the weight in separate @font-face rules.
+    font-weight: 100 200 300 400 500 600 700 800 900; 
+    src: url("/wp-content/themes/skookum/fonts/Roboto-VariableFont.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    // This is the variable font weight range. When linking to individual files, specify the weight in separate @font-face rules.
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    src: url("/wp-content/themes/skookum/fonts/Roboto-Italic-VariableFont.ttf");
+}

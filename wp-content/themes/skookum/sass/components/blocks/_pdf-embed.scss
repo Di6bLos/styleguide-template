@@ -1,0 +1,7 @@
+@use"../../utilities/variables" as *;
+
+.pdf-embed {
+	&__iframe {
+		height: 80vh;
+	}
+}

@@ -1,0 +1,10 @@
+@use './../utilities/variables' as *;
+
+.wp-block-columns.has-background {
+	padding-inline: $spacing-small;
+	padding-block: $spacing-medium;
+
+	@media (min-width: $bp-medium) {
+		padding-inline: $spacing-medium;
+	}
+}

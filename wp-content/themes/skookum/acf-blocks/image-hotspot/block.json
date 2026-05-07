@@ -1,0 +1,16 @@
+{
+    "name": "acf/image-hotspot",
+	"title": "Image Hotspot",
+    "description": "A block to add an image with interactive hotspots.",
+    "category": "media",
+    "icon": "location",
+    "viewScript": "file:./image-hotspot.js",
+    "keywords": ["image", "hotspot", "interactive", "marker"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "image-hotspot.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

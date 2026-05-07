@@ -1,0 +1,7 @@
+# ignore local dev stuff
+package-lock.json
+node_modules/
+css/style.css
+css/style.css.map
+css/editor.css
+css/editor.css.map
